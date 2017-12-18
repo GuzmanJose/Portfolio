@@ -1,0 +1,156 @@
+<section id="<%= id %>">
+		<div class="card-project">
+			<div class="row card-project-content">
+				<aside class="col-lg-3 col-sm-6">
+					<div class="info-project">
+						<div class="type-project">
+							<p><i class="fa fa-folder fa-lg"></i><span class="list"> Type</span></p>
+							<ul class="skills-project">
+								<li><%= type %></li>
+							</ul>
+						</div>  <!-- type-project -->
+						<% if (typeof awards !== "undefined") { -%>
+						<div class="awards-project">
+							<p><i class="fa fa-trophy fa-lg"></i><span class="list"> Awards</span></p>
+							<ul class="skills-project">
+								<% for (var i = 0; i < awards.length; i++) { -%>
+								<li><%-awards[i]%></li>	
+								<% } -%>
+							</ul>
+						</div>  <!-- awards-project -->	
+						<% } -%>
+						<div class="tools-project">
+							<p><i class="fa fa-wrench fa-lg"></i><span class="list"> Tools</span></p>
+							<ul class="skills-project">
+								<% for (var i = 0; i < tools.length; i++) { -%>
+									<li><%=tools[i]%></li>
+								<% } -%>
+							</ul>
+						</div>  <!-- tools-project -->
+						<div class="skill-project">
+							<p><i class="fa fa-universal-access fa-lg"></i><span class="list"> Skills</span></p>
+							<ul class="skills-project">
+								<% for (var i = 0; i < skills.length; i++) { -%>
+									<li><%=skills[i]%></li>
+								<% } -%>
+							</ul>
+						</div>  <!-- skill-project -->
+						<% if (typeof link !== "undefined") { -%>
+						<div class="link-project">
+							<p><i class="fa fa-link fa-lg"></i><span class="list"> Link</span></p>
+							<ul class="skills-project">
+								<li><a class="link" href="<%=link%>"><%=title%></a></li>
+							</ul>
+						</div>  <!-- link-project -->	
+						<% } -%>
+					</div>  <!-- projectInfo-projec -->
+				</aside>  <!-- col-lg-3 col-sm-6 -->
+				<div class="col-lg-9 col-sm-6">
+					<div class="info-project">
+						<div class="description-project">
+							<h3 class="sub-title">Description</h3>
+							<p>
+							<%- description %>
+							</p>
+						</div>  <!-- description-project -->
+						<hr>
+						<div class="how-project">
+							<h3 class="sub-title">Process</h3>
+							<p>
+							<%- process %>
+							</p>
+						</div>  <!-- how-project -->
+					</div>  <!-- info-projec -->
+				</div>	<!-- col-lg-9 col-sm-6 -->
+			</div>   <!-- row  -->
+		</div> <!-- card-project -->
+	</section>
+	<% if (typeof photos !== "undefined") { -%>
+	<section class="project-photos">
+		<% if (photos.length >= 1) { -%>
+			<div class="row no-gutter project-photos-card-container">
+				<% for (var i = 0; i < photos.length; i++) { -%>
+					<div class="col-lg-4 col-sm-6">
+						<div class="project-photos-card">
+						<a data-lightbox="<%=title%>" data-title="<%= photos[i]%>" href="/images/regular/<%= photos[i]%>">
+							<div style="background-image: url(/images/regular/<%= photos[i]%>);" class="project-photo"></div>
+						</a>
+						</div> <!-- project-photos-card -->	
+					</div>
+					<% if (i === 2 && photos.length > 2) { -%>
+						</div>  <!-- row -->
+						<div class="row no-gutter project-photos-card-container">
+					<% } else if (i === 2) { -%>
+						</div>  <!-- row -->
+					<% } -%>
+					<% if (i === 5 && photos.length > 5 ) { -%>
+						</div>  <!-- row -->
+						<div class="row no-gutter project-photos-card-container">
+					<% } else if (i === 2 && photos.length <= 2 || i === 5 && photos.length <= 5) { -%>
+						</div>  <!-- row -->
+					<% } -%>
+				<% } -%>
+		<% } else { -%>
+			<% for (var i = 0; i < photos.length; i++) { -%>
+				<div class="project-photos-card">
+					<img src="/images/regular/<%= photos[i]%>" class="project-photo">
+				</div> <!-- project-photos-card -->	
+			<% } -%>
+		<% } -%>
+	</section>
+	<% } -%>
+	<% if (typeof video !== "undefined") { -%>
+	<section class="project-videos">
+		<div class="project-videos-card">
+			<div class='embed-container'><iframe src='https://www.youtube.com/embed/<%=video%>' frameborder='0' allowfullscreen></iframe>
+			</div>	<!-- http://embedresponsively.com/ -->
+		</div>  <!-- project-videos-card -->
+	</section>		
+	<% } -%>
+	<section class="card-sign">
+		<div class="row card-sign-content">
+		<% for (var i = 0; i < thumbLink.length; i++) { -%>
+			<% if (thumbnail == thumbLink[i] && i !== 0 && i !== 11) { -%>
+			<div class="col-lg-6 col-xs-6 text-center">
+				<a class="link" href="/projects/<%=thumbLink[i-1]%>">
+					<p><%=titleLink[i-1]%></p>
+					<i class="fa fa-arrow-circle-left fa-5x"></i>
+				</a>
+			</div>	<!-- col-lg-6 col-sm-6 text-center -->
+			<div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+				<a class="link" href="/projects/<%=thumbLink[i+1]%>">
+					<p><%=titleLink[i+1]%></p>
+					<i class="fa fa-arrow-circle-right fa-5x"></i>
+				</a>
+			</div>	<!-- col-lg-6 col-sm-6 text-center -->				
+			<% } -%>
+			<% if (i==0 && thumbLink[i] == thumbnail) { -%>
+			<div class="col-lg-6 col-xs-6 text-center">
+				<a class="link" href="/">
+					<p>Home</p>
+					<i class="fa fa-arrow-circle-left fa-5x"></i>
+				</a>
+			</div>	<!-- col-lg-6 col-sm-6 text-center -->
+			<div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+				<a class="link" href="/projects/<%=thumbLink[i+1]%>">
+					<p><%=titleLink[i+1]%></p>
+					<i class="fa fa-arrow-circle-right fa-5x"></i>
+				</a>
+			</div>	<!-- col-lg-6 col-sm-6 text-center -->
+			<% } -%>
+			<% if (i==11 && thumbLink[i] == thumbnail) { -%>
+			<div class="col-lg-6 col-xs-6 text-center">
+				<a class="link" href="/projects/<%=thumbLink[i-1]%>">
+					<p><%=titleLink[i-1]%></p>
+					<i class="fa fa-arrow-circle-left fa-5x"></i>
+				</a>
+			</div>	<!-- col-lg-6 col-sm-6 text-center -->
+			<div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+
+			</div>	<!-- col-lg-6 col-sm-6 text-center -->	
+			<% } -%>
+		<% } -%>
+		</div>  <!-- row card-sign-content -->
+	</section>
+
+	<span id="thumbIndi" style="display: none;"><%=thumbnail%></span>

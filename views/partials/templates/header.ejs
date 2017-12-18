@@ -1,0 +1,38 @@
+	<header>
+		<% if (id == "Home") { -%>
+		<div class="home-header">
+			<img src="/images/thumbnail/logo.png" class="home-logo">
+			<ul class="home-skills list-inline">
+				<li>Developer</li>
+				<li>&#8226;</li>
+				<li>Illustrator</li>
+				<li>&#8226;</li>
+				<li>Designer</li>
+			</ul>
+			<p class="home-description">
+				I am a creative developer with a graphic design and illustration background who is focusing on the playfulness of technology and the simplicity of video games. I had traveled from graphic design and classic illustration to front-end and back-end development in order to arrive to the sweet land of game design and development where I found myself not just happy but fulfilled.
+				<br><br>
+				<span class="game-text">USE THE ARROW KEYS TO MOVE<br>PRESS THE SPACE BAR TO START PLAYING</span>
+			</p>
+		</div>  <!-- home-header -->		
+		<% } if (id == "Project") { -%>
+		<% if (typeof videoHero !== "undefined" && device == "desktop") { -%>
+		<div class="project-header videoHero">
+			<div class='trailer embed-container project-img'><iframe id="videoHero" src='https://www.youtube.com/embed/<%=videoHero%>?autoplay=1&mute=1&loop=1&playlist=<%=videoHero%>&controls=0&showinfo=0' frameborder='0' allowfullscreen></iframe></div>
+		</div>  <!-- project-header -->
+		<% } else { -%>
+		<div class="project-header">
+			<img src="/images/fullSize/<%=hero%>_fullSize.png" class="project-img">
+			<h1 class="project-title"><%=title%></h1>
+		</div>  <!-- project-header -->
+		<% } -%>
+		<% } -%>
+		<% if (id == "Resume") { -%>
+		<div class="resume-header">
+			<img src="/images/fullSize/<%=backgroundImage%>.png" class="resume-img">
+			<h1 class="resume-title"><%=name%></h1>
+		</div>  <!-- resume-header -->
+		<% } -%>
+
+
+	</header>

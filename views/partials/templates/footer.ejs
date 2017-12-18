@@ -1,0 +1,9 @@
+	<footer class="footer">
+		<ul class="icons-footer list-inline">
+		<% portData.Social.forEach(function (item) {%>
+			<li><a href="<%=item.url%>"><i class="<%=item.iconClass%> myLink"></i></a></li>
+		<% })%>
+		</ul>
+		<div><span class="footer-contact"><a class="myLink" href="/contact"><p class="myLink">Let's Meet</p></a></span></div>
+		<p class="footer-text">Coded with <small>&hearts;</small> using <a class="link" href="http://getbootstrap.com/">Bootstrap</a>, <a class="link" href="https://nodejs.org/en/">Node.js</a> &amp; <a class="link" href="https://expressjs.com/">Express</a></p>
+	</footer>

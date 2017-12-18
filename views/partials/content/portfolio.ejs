@@ -1,0 +1,21 @@
+	<section class="tiles-portfolio" id="Portfolio">
+	
+			<div class="row no-gutter">
+			<% for (var i = 0; i < portfolioThumb.length; i++) { -%>
+					<a href="/projects/<%=portfolioThumb[i]%>">
+						<div class="col-lg-3 col-sm-6 portfolio-thumbnail">
+								<img src="/images/thumbnail/<%=portfolioThumb[i]%>_thumbnail.png" 
+								class="portfolio-thumbnail-image">
+								<p class="portfolio-thumbnail-title"><%=portfolioTitle[i]%></p>
+								<p class="portfolio-thumbnail-cue">See More</p>
+						</div>	<!-- col-lg-3 col-sm-6 -->
+					</a>
+					<% if (i == 3 || i == 7) { -%>
+			</div>   <!-- row no-gutter -->
+			<div class="row no-gutter">
+					<% } else if ( i == 11) { -%>
+			</div>   <!-- row no-gutter -->			
+					<% } -%>
+			<% } -%>
+
+	</section>

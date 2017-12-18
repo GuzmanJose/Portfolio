@@ -1,0 +1,209 @@
+{
+	"Author": {
+		"name": "José Manuel Guzman Fierro",
+		"description": "I am strongly passionate about the entire video game industry from the artistic elements that create different atmospheres and worlds to the logical part behind the functionality of the main core mechanics. I also enjoy creating interactive worlds and simple solutions to complex problems.",
+		"goals": "I want to become an unique game developer creating mechanics that will generate an astonishing gameplay and acquiring a strong set of skills to achieve breathtaking scenarios with memorable characters.",
+		"background": "joseGuzman",
+		"education": [{
+			"degree": "M.F.A Interactive Media",
+			"year": "2015 - 2017",
+			"gpa": "3.7",
+			"university": "University of Miami"
+			}, {
+			"degree": "B.S. Graphic Design",
+			"year": "2009 - 2012",
+			"university": "México Valley University"	
+			}
+		],
+		"experience": [{
+			"job": "Graduate Assistant",
+			"company": "University of Miami",
+			"place": "Miami, Fl.",
+			"duration": "2016 - 2017",
+			"description": "Design and the front-end development of various websites, creation of the logo and mascot of the program laboratory."
+			}, {
+			"job": "Graphic Designer",
+			"company": "Spalancati",
+			"place": "Mexico, Distrito Federal.",
+			"duration": "2013 - 2014",
+			"description": "Participate in the design of a monthly magazine and different advertising campaigns."
+			}, {
+			"job": "Graphic Designer",
+			"company": "CC Digital",
+			"place": "Mexico, Distrito Federal.",
+			"duration": "2013 - 2014",
+			"description": "Collaborate in different advertising campaigns and the design of websites and applications."
+			}, {
+			"job": "Graphic Designer/<br class='br-resume-ed-de'>PostProduction",
+			"company": "Freelancer",
+			"place": "Mexico, Distrito Federal.",
+			"duration": "2012 - 2013",
+			"description": "Manage different graphic design and post-production projects for the publicity and their corporate image."
+			}
+		],
+		"skills":["Game Design/Developer", "Web Design/Developer", "Graphic Design", "Illustration", 
+					"2D Character Design", "3D Character Design", "Physical Computing"
+		],
+		"software":["Unity", "Maya", "Arduino IDE", "Illustrator", "Photoshop", "Indesign", "Sketch"
+		],
+		"development":["C#", "JS", "HTML5", "CSS3", "Node.js", "P5.js", "D3.js"
+		],
+		"language":["English", "Spanish"
+		],
+		"contact": {
+			"email": "dev-ill@outlook.com",
+			"phone": "305-804-2834"
+		}
+	},
+	"Projects": [{
+		"title": "SurviVR",
+		"type": "Virtual Reality",
+		"awards": ["Canes Festival<br>(Best Digital/VR Game)", "Game On <br>(Best Indie Game)"],
+		"skills": ["Game Design/Developer", "Environment Design", "3D Modeling"],
+		"tools": ["Unity (C#)", "Maya"],
+		"description": "<b>SurviVR</b> it’s a game where the player is stranded in an unusual planet due to a spaceship’s malfunction. As the gameplay advances the player will need to learn more about the surroundings and the tools that will help him in the difficult task of surviving the different menaces that are pending in each part of this strange journey.",
+		"process": "I created the entire level from the design and sketches to the modeling, animation and programming of all the elements that you will run into inside this VR video game.<br><br>At the beginning of this project I pictured this video game a little more simplistic and with a different type of hardware. After getting some advice from Professor Clay Ewing I decided to experiment with a more aggressive approach and a more powerful VR hardware.<br><br>After practicing and experimenting with different types of VR hardwares I chose the <b>HTC Vive</b> because it’s one of the best immersive experiences I’ve had so far. The precision of the sensors and the ability to move in a confined area gives a huge advantage to the <b>HTC Vive</b> above other VR hardwares.<br><br>Creating the world wasn’t an easy task. It was necessary to learn how to use a 3D modeling software like <b>Maya</b> before trying anything else. At first I learned how to use the basics of <b>Maya</b> by doing very simple models of trees and after some practice, I was able to generate different assets that will help me to create this VR videogame.<br><br>The environment and gameplay had different versions due to the fact that VR is a very unique medium and you need to consider different conditions that at the beginning doesn’t seem to be very obvious. That’s why you need to experiment and play with everything you create in order to make it realistic. -<i>even if it’s something impossible to believe</i>- It needs to feel realistic.<br><br>You have to also consider that the player will want to do things that are not possible due to the limitations of the VR hardwares. For example at the beginning the environment was a forest without any boundaries. But the player is confined to the area of the <b>HTC Vive</b> and unless you give him a method to teletransport their position the player will have the urge to explore and discover all the little details of that world. That’s how I decided to create natural boundaries that will limit the player to a designated area.<br><br>After testing the project and the feedback received from different users I came out with a very fulfilling result.",
+		"hero": "surviVR",
+		"videoHero": "3i-z2t8e3x8",
+		"thumbnail": "surviVR",
+		"photos": ["surviVR_1.png", "surviVR_2.png", "Award.jpg", "surviVR_3.png", "surviVR_4.png", "surviVR_5.png"],
+		"video": "x2qaL5z8B68?list=PLACx5pEHctd9_htsA5BOVI8wSFz2AFMhl"
+	}, {
+		"title": "Arduino Car",
+		"type": "Creative Hardware",
+		"skills": ["Physical Computing"],
+		"tools": ["Arduino IDE (C++)", "Myo (Armband)", "MyoDuino", "Lego"],
+		"description": "This car was made with different type of legos, a differential gear in the back, and a lego steering system in the front controlled by 2 servo motors that at the same time are powered by two 9V batteries. I also included enough space in the middle to support 2 breadboards and a microcontroller. Also a bluetooth module so I can control the direction and power with a gesture control armband.",
+		"process": "At first I just tried to create a car made of legos that I could move with one servo motor connected to a microcontroller (<b>Arduino uno</b>). I had different stages of development while working on this project. The first stage was just a simple car with a button that will turn on and off the servo motor. -<i>That was my first milestone making the car move forward</i>-.<br><br>I had to redesign the structure of the car so I could add the steering system and the second servo motor. I ran a second test by adding a script to the microcontroller that will change the direction of the car every 5 seconds. -<i>Second milestone the car moves forward and can change direction</i>-.<br><br>After having different ideas for how to control the car I remembered that the school had an <b>MYO</b> armband that I could use for my project. By using a second breadboard I was able to connect a bluetooth module to the <b>Arduino UNO</b> and create a bridge between the <b>Myo</b> armband, my PC, and the bluetooth module inside the car.<br><br>It was possible by using the <b>Myoduino</b> library from the developers of <b>Thalmyc labs</b> that connects the <b>Myo</b> armband to  the arduino microcontrollers. Of course I needed to make a little hack to the library in order to send the signal via bluetooth instead of the standard usb cable.-<i>Final stage, I was able to control the arduino car via bluetooth with a control gesture armband</i>-.",
+		"hero": "arduinoCar",
+		"thumbnail": "arduinoCar",
+		"photos": ["arduino_1.png", "arduino_2.png", "arduino_3.png", "arduino_4.png", "arduino_5.png", "arduino_6.png"],
+		"video": "NzWfgZdwsWE?list=PLACx5pEHctd84bEUs5-6i-dYOzIA--2Ib"
+	}, {
+		"title": "NerdLab",
+		"type": "Logo Design",
+		"skills": ["Graphic Design"],
+		"tools": ["Illustrator"],
+		"description": "The <b>NerdLab</b> is a games research lab based in the <b>Interactive Media MFA</b> program in the <b>School of Communication</b> at the <b>University of Miami</b>. The logo is meant to play with the mind, emphasizing that there is more than meets the eye. Just as NERDLab strives to push past the standard, the logo works to achieve that mentality in the visual space.",
+		"process": "At first it began like any other idea, with a pencil and a clean sheet of paper. I was playing with different concepts based on different logos of other game laboratories. When I came up with a playful and solid idea I passed all the sketches into <b>Adobe Illustrator</b> in order to create a more defined version of this concept.<br><br>The idea that I was playing with was a fusion between the perspective of a cube and the name of the laboratory. The idea became into 3 different sketches, and after having a meeting with the NerdLabers we came to a final decision of using the cleanest version and play with the colors of the backgrounds in order to give a more vibrant look to the design.",
+		"hero": "nerdLab",
+		"thumbnail": "nerdLab",
+		"photos": ["nerdLab_1.png", "nerdLab_2.png", "nerdLab_3.png", "nerdLab_4.png", "nerdLab_5.png", "nerdLab_6.png"]
+	}, {
+		"title": "Ronin",
+		"type": "Illustration",
+		"skills": ["Classic Illustration", "Digital Illustration", "Graphic Design"],
+		"tools": ["Illustrator" , "Copic 0.3"],
+		"description": "This is an illustration that came from an idea of a girl who end up becoming a samurai without a master in a distant and unreliable future.",
+		"process": "The way I created this illustration was by sketching in a traditional way that I later on inked using a <b>copic 0.3</b> and a <b>pentel brush</b>. After having the illustration I passed it into a digital medium using <b>Adobe Illustrator</b> to add the little details, color, shadows and highlights to this final composition.",
+		"hero": "ronin",
+		"thumbnail": "ronin",
+		"photos": ["ronin_1.jpg"]
+	}, {
+		"title": "Music Icon",
+		"type": "Icon Design",
+		"skills": ["Graphic Design"],
+		"tools": ["Photoshop", "Illustrator"],
+		"description": "This music icon was for people who enjoyed <b>iTunes</b> or any other media player but wasn’t satisfied with the design of the logo of these companies and wanted something more fresh and at the same time it could go with the image of your other icons in your dock or desktop.",
+		"process": "I started by using different models of vinyls discs and merged it with the idea of a media player by using some symbols and glow effects from <b>Adobe Photoshop</b>. After that I added a border with a subtle bevel and emboss to give the resemblance of a computer icon and create something that could look more of a personal version for a music icon. Something that could bring the detail and composition of a classic into this digital era.",
+		"hero": "icon",
+		"thumbnail": "icon",
+		"photos": ["music_1.jpg"]
+	}, {
+		"title": "Platypus",
+		"type": "Character Design",
+		"skills": ["2D Character Design", "Classic Illustration", "Digital Illustration"],
+		"tools": ["Photoshop", "Pentel Brush", "Copic Markers", "Wacom Tablet"],
+		"description": "This is the mascot for the <b>NerdLab</b>. Is based on a platypus who is a big fan of video games and programming with many different talents that make him a perfect addition to the <b>NerdLab</b> team. We were very open to the idea of having an international animal as a mascot because the <b>NerdLab</b> is a household where people from all over the world can get together and be part of something bigger than themselves.",
+		"process": "This illustration started in a digital medium using the <b>Wacom Tablet</b> to sketch and illustrate all the details in <b>Adobe Photoshop</b>. There were different types of proposals that we had to rule out in order to get to our final idea. After we decided to use a platypus as our mascot, the process to create an anthropomorphic animal started with various sketches in a digital medium.<br><br>After getting a decent result I started to work in both mediums, digital and traditional types of illustration, in order to have different looks and poses. The classic illustrations are very helpful in case any other illustrator needs to recreate the mascot; The digital files are used to create stickers, shirts, and any other type of branding and marketing.",
+		"hero": "platypus",
+		"thumbnail": "platypus",
+		"photos": ["plat_1.jpg", "plat_2.jpg", "plat_3.jpg", "plat_4.jpg"]
+	}, {
+		"title": "Developers Survey",
+		"type": "Data Visualization",
+		"link": "http://guzmanjose.github.io/Developers2016/",
+		"skills": ["Web Design/Developer", "Data Visualization"],
+		"tools": ["D3.js", "HTML5", "CSS3"],
+		"description": "This is a visual representation of the data from <b>Stack Overflow</b> which is an online community where programmers can learn and share their knowledge. Each year they conduct a survey trying to reveal trends, likes and the perspective of different matters between developers around the world.",
+		"process": "At the beginning I started to visualize what type of charts I could use to represent the data that I had chosen from the <b>Stack Overflow</b> survey. After I decided the charts and their corresponding data, I continued with the <b>HTML</b> skeleton and I also started to think what kind of look should I give it using <b>CSS</b>.<br><br>I thought that a text editor dark mode aesthetic would look great for this project -<i>I’m a big fan of dark mode in text editors</i>-. That’s why I decided to use a dark background with colorful highlights for the charts, tooltips, links and titles for the page with a simple white for the common text.<br><br>I use <b>D3.js</b> for the creation of the charts. <b>D3</b> is an amazing and limitless tool that will help you create the most compelling and beautiful data visualizations. I created 4 different <b>javascript</b> files, one for each data visualization. After loading the data and mounted each chart with <b>D3</b> I used the same style of the web page for the tooltips and highlights.",
+		"hero": "dev",
+		"thumbnail": "dev",
+		"photos": ["dev_1.png", "dev_2.png", "dev_3.png"]
+	}, {
+		"title": "Duck",
+		"type": "Video Game",
+		"link": "/duck",
+		"skills": ["Game Design/Developer", "Graphic Design", "2D Illustration"],
+		"tools": ["P5.js", "P5.Play.js", "Illustrator"],
+		"description": "This is the very first video game that I have ever created. It’s a side-scroller game where you play with a familiar character with a new handmade sprites. The background story of this video game is that you’re a duck who was shot and end up injured in a strange and dangerous forest. In order to get out of this place you will need to surpass many obstacles in order to get the necessary strength to fly back home.<br><br>I decided to create this video game in my class of creative coding because I was really attracted to the idea of becoming a video game designer. -<i>Of course my knowledge in programming was almost nonexistent so I had to work with what I had</i>-.",
+		"process": "I used the <b>javaScripts</b> libraries <b>p5.js</b> and <b>p5.play.js</b> for the creation of this video game. At the beginning, I started with just a simple ball and I made it run from one side to another in the screen. After loading <b>p5.play.js</b> I was able to load sprites and gave them a velocity and direction, with this in mind I started to create the physics and concept of the game.<br><br>After some rough sketches and testing I created the first part of the video game using blocks for the platforms and a small set of sprites to generate the main character in order to have a very simple sense of gameplay. The next step was to create some foes and of course more main functionalities like flying and other processes like finishing the game or failing it by bumping against any foe or falling out of the platforms.<br><br>After having all these elements, I tried to make it a little bit harder by adding new features like moving platforms and a final boss that you have to avoid in order to escape this dangerous forest.",
+		"hero": "duck",
+		"thumbnail": "duck",
+		"photos": ["duck_1.png", "duck_2.png", "duck_3.png", "duck_4.png", "duck_5.png", "duck_6.png"]
+	}, {
+		"title": "Character Design",
+		"type": "Character Design",
+		"skills": ["2D/3D Character Design", "Classic Illustration", "3D Modeling"],
+		"tools": ["Maya", "Pentel Brush & Copic"],
+		"description": "This <b>Bunny</b> was one of my first products as an illustrator. After I started to use <b>Maya</b> to create assets for my video games, I decided to transform this character into a 3D model so I could use it in different ways.",
+		"process": "I created this character through a process of sketches defining his personality and putting him in different scenarios thinking how he could react or express himself.<br><br>After having the main idea of how he would look like and how he would express himself, I created 2 views of this character: front and side version. Then I exported these images into <b>Maya</b> where I started to model a low-poly version of it.<br><br>Right after finishing the model, I add the UV map for a custom image of it’s fur. I finished my model by creating a skeleton with joints and IK handles so I could manipulate at my own convenience.",
+		"hero": "bunny",
+		"thumbnail": "bunny",
+		"photos": ["bunny_1.png", "bunny_2.jpg", "bunny_3.jpg", "bunny_4.jpg", "bunny_5.png", "bunny_6.png"]
+	}, {
+		"title": "Animation",
+		"type": "Character Animation",
+		"skills": ["Game Design", "Animation", "3D Modeling"],
+		"tools": ["Unity (C#)", "Maya"],
+		"description": "After creating, designing and modeling my character I decided to give him some animations that I could export into <b>Unity</b> so I could incorporate him in any video game.",
+		"process": "I started by adding the bones and IK handles to move and manipulate my character. After using the weight paint and some new handles I recorded the animations in <b>Maya</b>. I could’ve created different files for each animation for better performance but in this case I used just one file with all the animations and exported them into <b>Unity</b>.<br><br>After exporting all the animations, I edited them inside <b>Unity</b> so I could trigger them with different keys. I also gave him a rigid body and a collider to add velocity and movement that will match the running, jumping and walking animations.",
+		"hero": "anim",
+		"thumbnail": "anim",
+		"photos": ["anim_1.png", "anim_2.png" ,"anim_3.png", "anim_4.png", "anim_5.png"],
+		"video": "RlAY7mUnjk0?list=PLACx5pEHctd8keUaESi5u2pGZ-XFQpPIo"
+	}, {
+		"title": "Carlos Gutierrez",
+		"type": "Logo Design",
+		"skills": ["Graphic Design", "Illustration"],
+		"tools": ["Illustrator", "Photoshop"],
+		"description": "This logo was for <b>Carlos Gutierrez</b> who was a cyclist that lost both of his legs by failing the monthly payment imposs to his business from a mafia that was controlled by the local police of his home country. After fleeing his home country he decided to raise awareness by cycling through different parts of the United States using his bike and his new prosthetic legs.<br><br>I created this logo for the pitch of a documentary based on his life and all he had to endure in order to surpass his problems. The pitch didn’t come through but Carlos asked if he could purchase the logo for his personal use. I decided to give the logo to <b>Carlos Gutierrez</b> as a personal gift so he could use it for his own convenience.",
+		"process": "I started by creating different sketches with the use of his initials and combining them with the simplified silhouette version of a bicycle. After having a decent result on paper, I moved the process into <b>Adobe Illustrator</b> where I started to vectorize the logo. After some changes and polishing minor details, I moved the vectorized version into <b>Adobe Photoshop</b> where I added some shadow effects to give an illusion of depth.",
+		"hero": "logoBike",
+		"thumbnail": "logoBike",
+		"photos": ["logoBike_1.jpg"]
+	}, {
+		"title": "Design Challenge",
+		"type": "Illustration",
+		"skills": ["Classic Illustration", "Experimental WaterColor"],
+		"tools": ["WaterColor Brush", "Wine", "Coffe", "Vanilla", "Cupcake Frost"],
+		"description": "This was an experiment for a school project called design challenge where Prof. Lien Tran told us we had to create 5 compositions using some type of constraint. I decided to create 5 different types of illustrations and the constraint was to use some edible product to paint them.",
+		"process": "I first tried with other elements, but using wine turn out to be a very interesting way to paint. After some experimenting I decided to use a watercolor technique using some water to dilute the wine. For the composition I used the neutral color of the canvas for the highlights and the dark color of the wine for the shadows and silhouette.<br><br>The use of coffee was easier do the fact that I had worked with it in previous projects, I used hot water to prepare different sets of concentrated coffee to achieve a scalable set of tones that worked well for a watercolor effect.<br><br>The rest of the materials were more simple to use as I just applied them to create monotones or just the base color for the illustration (<i> Vanilla, Cupcake Frost</i>).",
+		"hero": "designChallenge",
+		"thumbnail": "designChallenge",
+		"photos": ["wolf_1.jpg", "design_1.png", "design_2.png", "design_3.png"]
+	}
+	],
+	"Social": [{
+		"title": "LinkedIn",
+		"iconClass": "fa fa-linkedin fa-2x",
+		"url": "https://www.linkedin.com/in/jose-manuel-guzman-fierro-b86675136/"
+	}, {
+		"title": "GitHub",
+		"iconClass": "fa fa-github fa-2x",
+		"url": "https://github.com/GuzmanJose"
+	}, {
+		"title": "Twitter",
+		"iconClass": "fa fa-twitter fa-2x",
+		"url": "https://twitter.com/GuzmanJ_pp"
+	}, {
+		"title": "Facebook",
+		"iconClass": "fa fa-facebook fa-2x",
+		"url": "https://www.facebook.com/jose.fierro.79"
+	}, {
+		"title": "Instagram",
+		"iconClass": "fa fa-instagram fa-2x",
+		"url": "https://www.instagram.com/guzmanj_pp/"
+	}
+	]
+}

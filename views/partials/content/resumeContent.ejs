@@ -1,0 +1,88 @@
+<section id="resume">
+		<div class="card-resume">
+			<div class="row card-resume-content">
+				<aside class="col-lg-3 col-sm-6">
+					<div class="info-resume">
+						<div class="skills-resume">
+							<p><i class="fa fa-universal-access fa-lg"></i><span class="list"> Skills</span></p>
+							<ul class="skills-resume">
+								<% for (var i = 0; i < skills.length; i++) { -%>
+									<li><%=skills[i]%></li>
+								<% } -%>
+							</ul>
+						</div>  <!-- skills-resume -->
+						<div class="software-resume">
+							<p><i class="fa fa-hdd-o fa-lg"></i><span class="list"> Software</span></p>
+							<ul class="skills-resume">
+								<% for (var i = 0; i < software.length; i++) { -%>
+									<li><%=software[i]%></li>
+								<% } -%>
+							</ul>
+						</div>  <!-- software-resume -->
+						<div class="development-resume">
+							<p><i class="fa fa-code fa-lg"></i><span class="list"> Development</span></p>
+							<ul class="development-resume">
+								<% for (var i = 0; i < development.length; i++) { -%>
+									<li><%=development[i]%></li>
+								<% } -%>
+							</ul>
+						</div>  <!-- development-resume -->
+						<div class="language-resume">
+							<p><i class="fa fa-language fa-lg"></i><span class="list"> Language</span></p>
+							<ul class="language-resume">
+								<% for (var i = 0; i < language.length; i++) { -%>
+									<li><%=language[i]%></li>
+								<% } -%>
+							</ul>
+						</div>  <!-- language-resume -->
+						<div class="contact-resume">
+							<p><i class="fa fa-address-book fa-lg"></i><span class="list"> Contact</span></p>
+							<ul class="contact-resume">
+								<li><%=contact.email%></li>
+								<li><%=contact.phone%></li>
+								<li><%=contact.address%></li>
+							</ul>
+						</div>  <!-- contact-resume -->
+					</div>  <!-- projectInfo-projec -->
+				</aside>  <!-- col-lg-3 col-sm-6 -->
+				<div class="col-lg-9 col-sm-6">
+					<div class="info-resume">
+						<div class="row goals-resume">
+							<p>
+								<%=goals%>
+							</p>
+						</div>  <!-- goals-resume -->
+						<hr>
+						<div class=" row description-resume">
+							<p>
+								<%=description%>
+							</p>
+						</div>  <!-- description-resume -->
+						<hr>
+						<div class="row education-resume">
+							<h3 class="sub-title"><i class="fa fa-mortar-board"></i> Education</h3>
+							<% for (var i = 0; i < education.length; i++) { -%>
+							<div class="resume-ed-year col-lg-6"><%=education[i].year%></div>
+							<% if (typeof education[i].gpa !== "undefined") { -%>
+							<div class="col-lg-6"><span class="gpa">GPA</span> <%=education[i].gpa%></div>
+							<% } -%>
+							<div class="resume-ed-degree col-lg-12"><%=education[i].degree%></div>
+							<div class="resume-ed-university col-lg-12"><%=education[i].university%></div>
+							<% } -%>
+						</div>  <!-- row education-resume -->
+						<hr>
+						<div class="row experience-resume">   <!-- /// Create a time line with CSS  // -->
+							<h3 class="sub-title"><i class="fa fa-briefcase"></i> Experience</h3>
+							<% for (var i = 0; i < experience.length; i++) { -%>
+							<div class="company col-lg-6"><%=experience[i].company%></div>
+							<div class="resume-ed-year col-lg-6"><%=experience[i].duration%></div>
+							<div class="resume-ed-degree col-lg-12 col"><%-experience[i].job%></div>
+							<div class="resume-ed-description col-lg-8"><%=experience[i].description%></div>
+							<% } -%>
+						</div>  <!-- experience-resume -->
+
+					</div>  <!-- info-projec -->
+				</div>	<!-- col-lg-9 col-sm-6 -->
+			</div>   <!-- row  -->
+		</div> <!-- card-resume -->
+	</section>
